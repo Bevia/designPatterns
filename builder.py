@@ -1,3 +1,7 @@
+# The Builder pattern is a creational pattern used to construct a complex object step by step.
+# It separates the construction of a complex object from its representation, so that
+# the same construction process can create different representations.
+
 # This example includes:
 # a `Product` class, which is the complex object being built;
 # a `Builder` class, with methods to construct and assemble parts of the product;

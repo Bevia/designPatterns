@@ -1,4 +1,5 @@
-# This example includes a `Product` class, which is the complex object being built;
+# This example includes:
+# a `Product` class, which is the complex object being built;
 # a `Builder` class, with methods to construct and assemble parts of the product;
 # a `ConcreteBuilder` class, which implements the building steps defined in the `Builder` interface;
 # and a `Director` class, which controls the construction process.

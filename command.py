@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-Explanation:
-
 # 1. **Command Interface**: The `Command` interface defines a method for executing an operation, typically named `execute()`.
 #
 # 2. **Receiver**: The `Light` class is the receiver object, which contains the actual implementation for performing operations

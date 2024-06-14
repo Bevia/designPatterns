@@ -1,5 +1,27 @@
 from abc import ABC, abstractmethod
 
+Explanation:
+
+# 1. **Command Interface**: The `Command` interface defines a method for executing an operation, typically named `execute()`.
+#
+# 2. **Receiver**: The `Light` class is the receiver object, which contains the actual implementation for performing operations
+# such as turning the light on or off.
+#
+# 3. **Concrete Commands**: `LightOnCommand` and `LightOffCommand` are concrete classes that implement the `Command` interface.
+# These classes encapsulate the `Light` receiver and specify the actions to turn the light on or off.
+#
+# 4. **Invoker**: The `RemoteControl` class acts as the invoker. It is responsible for triggering the execution of commands
+# through the `execute()` method. It maintains a collection of commands in a `commands` dictionary and
+# can execute a command based on its name.
+#
+# 5. **Client Code**:
+#     - An instance of `Light` (e.g., `living_room_light`) is created.
+#     - Instances of concrete commands (`LightOnCommand` and `LightOffCommand`) are created, each taking the `living_room_light` as a receiver.
+#     - The commands are registered with an instance of `RemoteControl` (`remote_control`) using unique command names.
+#     - Commands are executed by calling `remote_control.execute(command_name)`.
+#
+# When the client code is executed, it demonstrates the Command pattern in action. This pattern decouples the sender of
+# a request (the invoker) from the receiver (the receiver), providing greater flexibility and extensibility in handling various requests.
 
 # Command interface
 class Command(ABC):
